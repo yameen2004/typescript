@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fee Form</title>
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="bootstrap/bootstrap.css" />
+    <script src="bootstrap/bootstrap.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+        <h1 class="text-center my-4">Course Registration</h1>
+        <div class="form-group">
+            <label for="studentId">Student ID</label>
+            <input type="text" id="studentId" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="studentName">Student Name</label>
+            <input type="text" id="studentName" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="numCourses">Number of Courses</label>
+            <input type="number" id="numCourses" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="transportation">Transportation</label>
+            <select id="transportation" class="form-select">
+                <option value="12000">yes</option>
+                <option value="0">no</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="library">Library</label>
+            <select id="library" class="form-select">
+                <option value="3000">yes</option>
+                <option value="0">no</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="sports">Sports</label>
+            <select id="sports" class="form-select">
+                <option value="7000">yes</option>
+                <option value="0">no</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="gpa">GPA</label>
+            <select id="gpa" class="form-select">
+                <option value="0.95">3.8 - 4.0</option>
+                <option value="0.75">3.6 - 3.79</option>
+                <option value="0.50">3.5 - 3.59</option>
+                <option value="0">Less than 3.5</option>
+            </select>
+        </div>
+        <button class="btn btn-primary" onclick="calculateFees()">Calculate Fees</button>
+    </div>
+
+   
+    <script src="type.js"></script>
+
+    
+</body>
+</html>
